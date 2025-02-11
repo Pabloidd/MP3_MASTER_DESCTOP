@@ -1,0 +1,29 @@
+{
+  "name": "mp3-master-d",
+  "version": "1.0.0",
+  "description": "mp3 плеер на Electron",
+  "main": "main.js",
+  "author": "Pablo",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "electron": "^34.1.1",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.yourapp.mp3masterd",
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "directories": {
+      "output": "build"
+    }
+  }
+}
